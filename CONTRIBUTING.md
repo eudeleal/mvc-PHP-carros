@@ -1,0 +1,2 @@
+**Contribuir**
+Confira a [contributing](https://github.com/rafaellevissa/mvcexample/blob/master/CONTRIBUTING.md) página para ver os melhores locais para arquivar problemas, iniciar discussões e começar a contribuir.
