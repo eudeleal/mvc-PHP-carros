@@ -4,7 +4,7 @@ class ControllerListmotor{
     private $motorDB;
 
     public function __construct(){
-        $this->$motorDB = new MotorDB();
+        $this->$motorDB=new MotorDB();
         $this->criarTabela(); }
 
     public function criarTabela(){
@@ -15,7 +15,7 @@ class ControllerListmotor{
             echo("<td>$motor['potencia'].</td>");
             echo("<td>$motor['qntCilindros'].</td>");
             echo("<td>$motor['chassi'].</td>");
-            echo("href='../controllerDelete/editarmotor.php'?chassi=".$carro['chassi']."'>Editar Carro</a></>'"")
+            echo("href='../controllerDelete/editarmotor.php'?chassi=".$carro['chassi']."'>Editar Carro</a></>'")
         }
     }
 }
