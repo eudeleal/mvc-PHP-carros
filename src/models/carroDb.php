@@ -1,6 +1,8 @@
 <?php
+require_once("../config/db.php");
 
-class CarroDb{
+class CarroDb
+{
     protected $mysqli;
 
     public function __construct(){
@@ -8,7 +10,7 @@ class CarroDb{
     }
 
     public function conexao(){
-        $this->mysqli = mysqli(DB_SERVIDOR, DB_USUARIO, DB_SENHA, DB_BANCO);
+        $this->mysqli = new mysqli(DB_SERVIDOR, DB_USUARIO, DB_SENHA, DB_BANCO);
     }
 
     public function setCarro($marca, $modelo, $cor){
