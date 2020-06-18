@@ -1,21 +1,23 @@
 <?php
-require_once '../models/motorDb.php'
-class ControllerListmotor{
-    private $motorDB;
+require_once '../models/motorDb.php';
+class ControllerListMotor{
+    private $motorDb;
 
     public function __construct(){
-        $this->$motorDB=new MotorDB();
-        $this->criarTabela(); }
+        $this->motorDb = new MotorDb();
+        $this->criarTabela();
+    }
 
     public function criarTabela(){
-        $result = $this->MotorDB->getCarros();
+        $result = $this->motorDb->getMotores();
         foreach ($result as $motor){
             echo("<tr>");
-            echo("<td>$motor['motorID'].</th>");
-            echo("<td>$motor['potencia'].</td>");
-            echo("<td>$motor['qntCilindros'].</td>");
-            echo("<td>$motor['chassi'].</td>");
-            echo("href='../controllerDelete/editarmotor.php'?chassi=".$carro['chassi']."'>Editar Carro</a></>'")
-        }
+            echo("<th>".$motor['MotorID']."</th>"); 
+            echo("<td>".$motor['potencia']."</td>");
+            echo("<td>".$motor['qntCilindros']."</td>");
+            echo("<td>".$motor['chassi']."</td>");   
+            echo("<td><a class='btn btn-warning' href='editarMotor.php?chassi=".$motor['MotorID']."'>Editar Carro</a></td>");
+            echo("</tr>");
+        } 
     }
 }

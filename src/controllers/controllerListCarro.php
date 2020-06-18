@@ -1,5 +1,5 @@
 <?php
-require_once '../models/carroDb.php'
+require_once '../models/carroDb.php';
 class ControllerListCarro{
     private $carroDb;
 
@@ -12,11 +12,12 @@ class ControllerListCarro{
         $result = $this->carroDb->getCarros();
         foreach ($result as $carro){
             echo("<tr>");
-            echo("<td>$carro['chassi'].</th>");
-            echo("<td>$carro['marca'].</td>");
-            echo("<td>$carro['modelo'].</td>");
-            echo("<td>$carro['cor'].</td>");
-            echo("href='../controllerDelete/editarCarro.php'?chassi=".$carro['chassi']."'>Editar Carro</a></>'"")
-        }
+            echo("<th>".$carro['chassi']."</th>"); 
+            echo("<td>".$carro['marca']."</td>");
+            echo("<td>".$carro['modelo']."</td>");
+            echo("<td>".$carro['cor']."</td>");   
+            echo("<td><a class='btn btn-warning' href='editarCarro.php?chassi=".$carro['chassi']."'>Editar Carro</a> <a class='btn btn-danger' href='../controlers/controllerDeleteCarro.php?chassi=".$carro['chassi']."'>Excluir Carro</a></td>");
+            echo("</tr>");
+        } 
     }
 }
