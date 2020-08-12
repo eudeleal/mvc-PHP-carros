@@ -23,7 +23,7 @@ Projeto faz parte de avaliaçao parcial da disciplina de desenvolvimento de sist
 Foto | Nome | GitHub | Likedin | E-mail
 ---- | ---- | ------ | ------- | ------
 <img src="./doc/levi.jpg" width="100px">  | Rafael Levi Batista Costa | [Rafael Levi](https://github.com/rafaellevissa) | [Linkedin](https://www.linkedin.com/in/rafaellevissa/) | rafaellevissa@gmail.com
-<img src="./doc/levi.jpg" width="100px">  | Eude Dos Santos Leal | [EUde Leal](https://github.com/eudeleal) | [Linkedin](https://www.linkedin.com/in/eude-leal-0223931ab) | eudeatitude@gmail.com
+<img src="./doc/Eude Leal.jpg" width="100px">  | Eude Dos Santos Leal | [EUde Leal](https://github.com/eudeleal) | [Linkedin](https://www.linkedin.com/in/eude-leal-0223931ab) | eudeatitude@gmail.com
 
 **License**
 
